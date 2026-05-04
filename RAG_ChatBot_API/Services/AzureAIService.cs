@@ -15,7 +15,7 @@ namespace RAG_ChatBot_API.Services
 
         public AzureAIService(IConfiguration config)
         {
-            endpoint = new Uri(sconfig["Azure:OpenAIEndpoint"]).ToString();
+            endpoint = new Uri(config["Azure:OpenAIEndpoint"]).ToString();
             key = config["Azure:OpenAIKey"].ToString();
 
         }
